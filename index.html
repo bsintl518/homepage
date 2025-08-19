@@ -3,68 +3,103 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BS International | 어린이 스킨케어 · 수입/유통</title>
-  <meta name="description" content="BS International — 어린이 스킨케어 전문 브랜드 수입·유통" />
+  <title>BS INTERNATIONAL</title>
+  <meta name="description" content="BS INTERNATIONAL — 어린이/에스테틱 스킨케어 유통" />
   <link rel="icon" href="images/favicon.ico" />
-  <!-- Tailwind CSS -->
+  <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-neutral-800">
 
-  <!-- 헤더 -->
-  <header class="bg-emerald-600 text-white p-4">
-    <div class="container mx-auto flex justify-between">
-      <h1 class="font-bold">BS International</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:underline">회사소개</a>
-        <a href="#brands" class="hover:underline">브랜드</a>
-        <a href="#contact" class="hover:underline">문의</a>
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-neutral-200">
+    <div class="container mx-auto max-w-6xl px-4 h-16 flex items-center justify-between">
+      <!-- 로고(텍스트/이미지 아무거나) -->
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="BS INTERNATIONAL" class="h-7 w-auto" />
+        <span class="font-semibold tracking-tight">BS INTERNATIONAL</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-neutral-600">
+        <a href="#about" class="hover:text-neutral-900">회사소개</a>
+        <a href="#brands" class="hover:text-neutral-900">브랜드</a>
+        <a href="#notice" class="hover:text-neutral-900">공지사항</a>
+        <a href="#contact" class="hover:text-neutral-900">문의하기</a>
       </nav>
     </div>
   </header>
 
-  <!-- 메인 배너 -->
-  <section class="container mx-auto px-4 py-16 text-center">
-    <h2 class="text-3xl md:text-5xl font-extrabold">어린이 스킨케어 전문 유통사</h2>
-    <p class="mt-4 text-lg text-gray-600">프랑스 오가닉 키즈 브랜드 TOOFRUIT을 한국에 소개합니다.</p>
-  </section>
-
-  <!-- 회사소개 -->
-  <section id="about" class="container mx-auto px-4 py-14">
-    <h2 class="text-2xl font-bold mb-4">회사소개</h2>
-    <p>
-      BS International은 프리미엄 어린이 스킨케어 브랜드를 수입·유통하는 기업입니다.
-      안전성과 품질을 최우선으로, 파트너와 고객에게 신뢰를 제공합니다.
-    </p>
-  </section>
-
-  <!-- 브랜드 -->
-  <section id="brands" class="container mx-auto px-4 py-14">
-    <h2 class="text-2xl font-bold mb-6">브랜드</h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- 브랜드 카드 예시 -->
-      <div class="p-6 border rounded-lg text-center">
-        <img src="images/toofruit.jpg" alt="TOOFRUIT" class="mx-auto mb-4 rounded-lg">
-        <h3 class="font-semibold">TOOFRUIT</h3>
-        <p class="text-sm text-gray-600 mt-2">프랑스 오가닉 키즈 스킨케어 (Ecocert 인증)</p>
+  <!-- HERO / MAIN BANNER -->
+  <section class="relative">
+    <!-- 배너 이미지(가로형) -->
+    <img src="images/hero.jpg" alt="메인 배너"
+         class="w-full h-[46vw] max-h-[560px] object-cover" />
+    <!-- 오버레이 텍스트 -->
+    <div class="absolute inset-0">
+      <div class="container mx-auto max-w-6xl h-full px-4 flex items-center">
+        <div class="max-w-xl">
+          <!-- 상단 라벨/브랜드 -->
+          <p class="text-2xl font-semibold tracking-wide text-neutral-700">ANUBIS barcelona</p>
+          <h1 class="mt-4 text-3xl md:text-4xl font-extrabold text-neutral-800">
+            35년 이상의 프로페셔널 에스테틱
+          </h1>
+          <p class="mt-3 text-neutral-700">
+            미국, 유럽, 일본 등 세계 40여개국 이상의 국가에 수출하고 있는 아누비스
+          </p>
+          <a href="#brands"
+             class="inline-block mt-6 px-5 py-3 rounded-lg bg-neutral-900 text-white text-sm hover:bg-neutral-800">
+             자세히 보기
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 문의 -->
-  <section id="contact" class="container mx-auto px-4 py-14">
-    <h2 class="text-2xl font-bold mb-4">문의하기</h2>
-    <p>📧 이메일: <a href="mailto:support@example.com" class="text-emerald-600 underline">support@example.com</a></p>
-    <p>📞 전화: 010-0000-0000</p>
+  <!-- BRANDS SECTION -->
+  <section id="brands" class="border-t border-neutral-200">
+    <div class="container mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-xs font-semibold tracking-[.25em] text-neutral-500">BRANDS</h2>
+      <p class="mt-2 text-lg font-semibold">비에스인터내셔널의 주요 브랜드사를 소개합니다.</p>
+
+      <!-- 로고 그리드 -->
+      <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-10 place-items-center">
+        <!-- 각 로고는 원하는 링크로 연결 -->
+        <a href="#" class="opacity-80 hover:opacity-100 transition" title="TOOFRUIT">
+          <img src="images/logo-toofruit.png" alt="TOOFRUIT" class="h-10 w-auto" />
+        </a>
+        <a href="#" class="opacity-80 hover:opacity-100 transition" title="MC MAGI">
+          <img src="images/logo-mcmagi.png" alt="MC MAGI" class="h-10 w-auto" />
+        </a>
+        <a href="#" class="opacity-80 hover:opacity-100 transition" title="DEBEAUS">
+          <img src="images/logo-debeaus.png" alt="DEBEAUS" class="h-10 w-auto" />
+        </a>
+        <a href="#" class="opacity-80 hover:opacity-100 transition" title="ERLIN">
+          <img src="images/logo-erlin.png" alt="ERLIN" class="h-10 w-auto" />
+        </a>
+        <a href="#" class="opacity-80 hover:opacity-100 transition" title="ITACA">
+          <img src="images/logo-itaca.png" alt="ITACA" class="h-10 w-auto" />
+        </a>
+        <a href="#" class="opacity-80 hover:opacity-100 transition" title="ANUBIS">
+          <img src="images/logo-anubis.png" alt="ANUBIS" class="h-10 w-auto" />
+        </a>
+      </div>
+    </div>
   </section>
 
-  <!-- 푸터 -->
-  <footer class="bg-gray-100 p-6 text-center text-sm text-gray-600">
-    © <span id="year"></span> BS International. All rights reserved.
+  <!-- PLACEHOLDER: 공지/문의 섹션 앵커만 -->
+  <section id="notice"></section>
+  <section id="contact"></section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-neutral-200">
+    <div class="container mx-auto max-w-6xl px-4 py-10 text-sm text-neutral-500 flex items-center justify-between">
+      <p>© <span id="year"></span> BS INTERNATIONAL</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-neutral-700">개인정보 처리방침</a>
+        <a href="#" class="hover:text-neutral-700">이용약관</a>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
